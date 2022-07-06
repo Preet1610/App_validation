@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Registration"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="300px"
+    android:layout_height="300px"
+    android:src="@drawable/downloadnew"
+    android:layout_marginTop="60px"
+    android:layout_marginLeft="135sp"
+    />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:inputType="text"
+        android:drawableLeft="@drawable/person_24"
+        android:layout_marginHorizontal="25sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="30sp"
+        android:hint="Name"
+        android:drawablePadding="15sp"
+        android:textColorHint="@color/navy_blue"
+        android:background="@drawable/round_corners"
+        android:fontFamily="sans-serif-medium"
+    />
+
+    <EditText
+        android:id="@+id/et_mail"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/email_24"
+        android:layout_marginHorizontal="25sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="30sp"
+        android:hint="Email ID"
+        android:drawablePadding="15sp"
+        android:textColorHint="@color/navy_blue"
+        android:background="@drawable/round_corners"
+        android:fontFamily="sans-serif-medium"
+    />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_pass_layout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/purple_200">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_pass"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:drawableStart="@drawable/lock_open_24"
+            android:layout_marginHorizontal="25sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="30sp"
+            android:hint="Password"
+            android:textColorHint="@color/navy_blue"
+            android:drawablePadding="15sp"
+            android:background="@drawable/round_corners"
+            android:fontFamily="sans-serif-medium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_passcfrm_layout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/purple_200">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_passcfrm"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:layout_marginHorizontal="25sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="30sp"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/navy_blue"
+            android:drawablePadding="15sp"
+            android:background="@drawable/round_corners"
+            android:fontFamily="sans-serif-medium"
+            style=""/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:inputType="number"
+        android:drawableLeft="@drawable/phone_android_24"
+        android:layout_marginHorizontal="25sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="30sp"
+        android:hint="Enter Mobile"
+        android:drawablePadding="15sp"
+        android:textColorHint="@color/navy_blue"
+        android:background="@drawable/round_corners"
+        android:fontFamily="sans-serif-medium"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:inputType="text"
+        android:layout_marginHorizontal="25sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="30sp"
+        android:hint="Write Something"
+        android:drawablePadding="15sp"
+        android:textColorHint="@color/navy_blue"
+        android:background="@drawable/round_corners"
+        android:fontFamily="sans-serif-medium"
+        />
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30sp">
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="19sp"
+            android:padding="10sp"/>
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="19sp"
+            android:padding="10sp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="200sp"
+        android:layout_height="70sp"
+        android:text="Register"
+        android:layout_marginHorizontal="105sp"
+        android:layout_marginTop="15sp"
+        android:textSize="16sp"
+        android:textAllCaps="false"/>
+
+
+
+</LinearLayout>
+    </ScrollView>
