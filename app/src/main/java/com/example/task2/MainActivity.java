@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("phone",phone_value);
                 startActivity(i);
                 Toastc.isShow(this,"Successful");
+                Toastc.isShow(this,"Project Shared on GitHub");
             }
         });
     }
